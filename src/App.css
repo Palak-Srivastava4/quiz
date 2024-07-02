@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+/* .home{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     height: 70vh;
+     width: 60%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     padding: 40px;
+     z-index: 1;
+     background-color: rgba(236, 235, 235, 0.781);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blur{
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start{
   display: flex;
-  flex-direction: column;
+}
+.quiz-image{
+  margin-top: -10px;
+  margin-right: 10px;
+}
+.title{
+  justify-content: center;
+  align-items: center;
+}
+.title h4{
+  font-size: 60px;
+  font-weight: 600;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.title p{
+  font-size: 24px;
+color: grey;
+line-height: 35px;
+margin-right: 20px;
+text-align: justify;
+}
+.title button{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 80px;
+  color: gray;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(130, 241, 124);
+  cursor: pointer;
+}
+.quizContainer{
+  background-color: rgba(236, 235, 235, 0.781);
+ display: block;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px;
+}
+.header{
+  padding-top: 20px;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.course h4{
+  font-size: 40px;
+  font-weight: 600;
+}
+.timer{
+  font-size: 24px;
+  padding: 30px;
+}
+.bottomContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  font-size: 30px;
+margin-top: 60px;
+}
+.next{
+  background-color: rgb(117, 117, 253);
+  border-radius: 6px;
+  padding: 6px 30px;
   color: white;
+  cursor: pointer;
+  border: 0px;
+  font-size: 20px;
+}
+.prev{
+  border: 2px solid gray;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.res{
+  background-color: rgb(31, 182, 208);
+  border-radius: 6px;
+  padding: 8px 24px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0px solid white;
+}
+.feedback-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+.feedback{
+    display: block;
+     align-items: center;
+     justify-content: center;
+     width: 90%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     padding: 0px 40px;
+     background-color: rgba(236, 235, 235, 0.781);
+}
+form h2{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: rgb(236, 138, 138);
+}
+form p{
+  font-size: 26px;
+  padding-left: 50px;
+}
+label{
+
+  font-size: 16px;
+  padding-left:40px
 }
 
-.App-link {
-  color: #61dafb;
+input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  background-clip: content-box;
+  border: 0.2px solid #bbbbbb;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="radio"]:checked {
+  background-color: rgb(236, 138, 138);
 }
+
+.btn{
+  align-items: center;
+  padding: 6px 40px;
+  font-size: 20px;
+  margin: 40px 44%;
+  border-radius: 6px;
+  background-color: rgb(236, 138, 138);
+  color: white;
+  border: 0px;
+}
+
+.container{
+  display: flex;
+  align-items: end;
+}
+.overall{
+  align-items: center;
+  justify-content: center;
+  padding-left: 120px;
+}
+.rate p{
+  margin-left: 50px;
+  color: rgb(101, 101, 255);
+  font-size: 36px;
+}
+.star{
+  color: hwb(0 50% 50%);
+  cursor: pointer;
+}
+.review{
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+textarea{
+  height: 120px;
+  width: 340px;
+  padding: 10px;
+}
+.qwer[type="radio"] {
+ display: none;
+} */
