@@ -189,7 +189,6 @@ const Quiz = () => {
             <Styled.Btn onClick={() => navigate("/feedback", { state: { score, answers: answeredQuestions, questions } })}>Submit</Styled.Btn>
           )}
         </Styled.ButtonPannel>
-        <div>{score}</div>
       </Styled.Header>
     </Styled.Background>
   );
